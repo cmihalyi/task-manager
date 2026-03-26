@@ -17,11 +17,13 @@ module('Integration | Component | nav', function (hooks) {
     assert.dom().hasText('');
 
     // Template block usage:
-    await render(<template>
-      <Nav>
-        template block text
-      </Nav>
-    </template>);
+    await render(
+      <template>
+        <Nav>
+          template block text
+        </Nav>
+      </template>
+    );
 
     assert.dom().hasText('template block text');
   });

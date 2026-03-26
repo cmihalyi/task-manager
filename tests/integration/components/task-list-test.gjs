@@ -17,11 +17,13 @@ module('Integration | Component | task-list', function (hooks) {
     assert.dom().hasText('');
 
     // Template block usage:
-    await render(<template>
-      <TaskList>
-        template block text
-      </TaskList>
-    </template>);
+    await render(
+      <template>
+        <TaskList>
+          template block text
+        </TaskList>
+      </template>
+    );
 
     assert.dom().hasText('template block text');
   });

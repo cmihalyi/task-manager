@@ -17,11 +17,13 @@ module('Integration | Component | completed-list', function (hooks) {
     assert.dom().hasText('');
 
     // Template block usage:
-    await render(<template>
-      <CompletedList>
-        template block text
-      </CompletedList>
-    </template>);
+    await render(
+      <template>
+        <CompletedList>
+          template block text
+        </CompletedList>
+      </template>
+    );
 
     assert.dom().hasText('template block text');
   });

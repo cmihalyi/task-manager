@@ -54,10 +54,18 @@ export default class TaskList extends Component {
         <li class="task-list-item">
           <span>{{task.title}}</span>
           <div class="task-list-actions">
-            <button class="btn-done" type="button" {{on "click" (fn this.toggle task.id)}}>
+            <button
+              class="btn-done"
+              type="button"
+              {{on "click" (fn this.toggle task.id)}}
+            >
               ✅ Done
             </button>
-            <button class="btn-delete" type="button" {{on "click" (fn this.delete task.id)}}>
+            <button
+              class="btn-delete"
+              type="button"
+              {{on "click" (fn this.delete task.id)}}
+            >
               🗑 Delete
             </button>
           </div>
