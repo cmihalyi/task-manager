@@ -1,4 +1,5 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
 /* Layout */
 main {
   max-width: 600px;
@@ -16,23 +17,23 @@ main {
   font-family: sans-serif;
 }
 
-.nav__title {
+.nav-title {
   color: white;
   margin: 0;
   font-size: 1.2rem;
 }
 
-.nav__links {
+.nav-links {
   display: flex;
   gap: 24px;
 }
 
-.nav__link {
+.nav-link {
   color: white;
   text-decoration: none;
 }
 
-.nav__badge--pending {
+.nav-badge-pending {
   background: #e74c3c;
   color: white;
   border-radius: 12px;
@@ -41,7 +42,7 @@ main {
   margin-left: 6px;
 }
 
-.nav__badge--completed {
+.nav-badge-completed {
   background: #27ae60;
   color: white;
   border-radius: 12px;
@@ -57,7 +58,7 @@ main {
   margin-bottom: 24px;
 }
 
-.task-form__input {
+.task-form-input {
   padding: 10px;
   flex: 1;
   border: 1px solid #ddd;
@@ -65,7 +66,7 @@ main {
   font-size: 1rem;
 }
 
-.task-form__button {
+.task-form-button {
   padding: 10px 20px;
   background: #2c3e50;
   color: white;
@@ -82,13 +83,13 @@ main {
   margin: 0;
 }
 
-.task-list__empty {
+.task-list-empty {
   color: #999;
   padding: 14px;
   text-align: center;
 }
 
-.task-list__item {
+.task-list-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,18 +99,18 @@ main {
   margin-bottom: 8px;
 }
 
-.task-list__item--completed {
+.task-list-item-completed {
   color: #999;
   text-decoration: line-through;
 }
 
-.task-list__actions {
+.task-list-actions {
   display: flex;
   gap: 8px;
 }
 
 /* Buttons */
-.btn--done {
+.btn-done {
   padding: 6px 12px;
   background: #27ae60;
   color: white;
@@ -118,9 +119,10 @@ main {
   cursor: pointer;
 }
 
-.btn--delete {
+.btn-delete {
   padding: 6px 12px;
   background: #e74c3c;
   color: white;
   border: none;
   border-radius: 6px;
+}

@@ -38,32 +38,32 @@ export default class TaskList extends Component {
       <label for="new-task" class="sr-only">New task title</label>
       <input
         id="new-task"
-        class="task-form__input"
+        class="task-form-input"
         type="text"
         placeholder="Add a new task..."
         value={{this.newTitle}}
         {{on "input" this.updateTitle}}
       />
-      <button class="task-form__button" type="submit">
+      <button class="task-form-button" type="submit">
         Add
       </button>
     </form>
 
     <ul class="task-list">
       {{#each this.tasks.pending as |task|}}
-        <li class="task-list__item">
+        <li class="task-list-item">
           <span>{{task.title}}</span>
-          <div class="task-list__actions">
-            <button class="btn--done" type="button" {{on "click" (fn this.toggle task.id)}}>
+          <div class="task-list-actions">
+            <button class="btn-done" type="button" {{on "click" (fn this.toggle task.id)}}>
               ✅ Done
             </button>
-            <button class="btn--delete" type="button" {{on "click" (fn this.delete task.id)}}>
+            <button class="btn-delete" type="button" {{on "click" (fn this.delete task.id)}}>
               🗑 Delete
             </button>
           </div>
         </li>
       {{else}}
-        <li class="task-list__empty">
+        <li class="task-list-empty">
           No pending tasks — add one above!
         </li>
       {{/each}}

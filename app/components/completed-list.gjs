@@ -9,11 +9,11 @@ export default class CompletedList extends Component {
 
     <ul class="task-list">
       {{#each this.tasks.completed as |task|}}
-        <li class="task-list__item task-list__item--completed">
+        <li class="task-list-item task-list-item-completed">
           {{task.title}}
         </li>
       {{else}}
-        <li class="task-list__empty">
+        <li class="task-list-empty">
           Nothing completed yet — get to work! 💪
         </li>
       {{/each}}
